@@ -3,21 +3,28 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap';
 import "./Servis.css"
+import serviceData from "../assets/data/serviceData";
 
 const Servis = () => {
   return <section className='servis'>
         <Container>
             <Row>
-                <Col lg='3' md ='4'>
+
+                {
+                    serviceData.map((item, index) => (
+                        <Col lg='3' md ='4' key={index}>
                     <div className='servis_item'>
-                        <span><i class="ri-truck-line"></i></span>
+                        <span><i class={item.icon}></i></span>
 
                         <div>
-                            <h3>Free Shipping</h3>
-                            <p>The book will be delivered to any address</p>
+                            <h3>{item.title}</h3>
+                            <p>{item.subtitle}</p>
                         </div>
                     </div>
                 </Col>
+                    ))
+                }
+                
             </Row>
         </Container>
   </section>

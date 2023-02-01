@@ -3,4 +3,32 @@
 .servis_item {
     padding: 20px;
     background-color: rgba(133, 133, 87, 0.486);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.servis_item span  {
+    font-size: 2.2rem;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 60px;
+    color: rgb(39, 20, 7);
+    font-weight: 400 !important;
+
+}
+.servis_item h3{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.servis_item p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #222;
+
+
 }
