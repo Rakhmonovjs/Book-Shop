@@ -1,0 +1,35 @@
+
+.hero_section {
+    /* background-color: rgb(102, 102, 96); */
+    background-color: rgb(212, 212, 212);
+}
+
+.hero_content h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.hero_content p {
+    color: var(--primary-color);
+    line-height: 28px;
+}
+
+.shop_btn {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius:  5px;
+    background-color: rgb(202, 159, 41);
+    color: aliceblue;
+    cursor: pointer;
+    font-style: 1rem;
+}
+.shop_btn a:hover {
+    color: aliceblue;
+}
+
+.hero_content {
+    padding-top: 45px;
+}
