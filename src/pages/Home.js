@@ -16,16 +16,16 @@ const Home = () => {
     const [bestbook, setBestbook] = useState([]);
 
     useEffect(() => {
-        const TrendBook = products.filter(
+        const filterTrendBook = products.filter(
         (item) => item.category === "Hell of a BOOK"
         );
 
-        const BestBook = products.filter(
+        const filterBestBook = products.filter(
             (item) => item.category === "sofa"
             );
 
-        setTrendbook(TrendBook);
-        setTrendbook(BestBook);
+        setTrendbook(filterTrendBook);
+        setBestbook(filterBestBook);
     }, []);
 
     return (
@@ -66,6 +66,7 @@ const Home = () => {
                     <Col lg="12" className='text'>
                         <h2 className='section-title'>Best Book</h2>
                     </Col>
+                    <Productlist data={bestbook} />
                 </Row>
             </Container>
         </section>
