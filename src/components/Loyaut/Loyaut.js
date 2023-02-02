@@ -9,7 +9,6 @@ const Loyaut = () => {
         <Header />
         <div>
             <Routers />
-            {/* <h1>bvrbrbtrb</h1> */}
         </div>
         <Footer />
     </>

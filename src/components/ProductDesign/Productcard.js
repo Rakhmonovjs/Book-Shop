@@ -8,7 +8,7 @@ import { Col } from "reactstrap";
 
 const Productcard = ({item}) => {
   return (
-    <Col lg='3' md='4'>
+    <Col lg='3' md='4'  className='mb-2'>
       <div className='product_item'>  
         <div className='product_img'>
           <Link to={`/shop/${item.id}`}>

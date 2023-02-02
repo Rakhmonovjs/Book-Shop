@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 
 // import logo from '../../assets/images/eco-logo.png'
 import userIcon from '../../assets/images/user-icon.png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const nav_links = [
     {
@@ -30,10 +30,14 @@ const Header = () => {
         <Row>
             <div className='nav_wrapper'>
                 <div className='logo'>
+                    <Link to="/">
                     <h2><i class="ri-book-mark-line"></i></h2>
+                    </Link>
                     {/* <img src={logo} alt="logo" /> */}
                     <div>
+                        <Link to="/">
                         <h1>Book Shop</h1>
+                        </Link>
                         {/* <p>Libraries</p> */}
                     </div>
                 </div>
