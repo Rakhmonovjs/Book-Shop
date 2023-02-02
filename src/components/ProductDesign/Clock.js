@@ -13,6 +13,7 @@ const Clock = () => {
         const destantion = new Date('Feb 2, 2023');
 
         interval = setInterval(() => {
+            const now = new Date().getTime()
             const different = destantion - now
             const days = Math.floor(different / (1000 * 60* 60 * 24))
             const hours = Math.floor(different % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
