@@ -1,5 +1,5 @@
 
-
+import { motion } from 'framer-motion';
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap';
 import "./Servis.css"
@@ -13,14 +13,15 @@ const Servis = () => {
                 {
                     serviceData.map((item, index) => (
                         <Col lg='3' md ='4' key={index}>
-                    <div className='servis_item'>
+                    <motion.div whileHover={{scale:1.1}}
+                         className='servis_item' style={{background: `${item.bg}`}}>
                         <span><i class={item.icon}></i></span>
 
                         <div>
                             <h3>{item.title}</h3>
                             <p>{item.subtitle}</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </Col>
                     ))
                 }

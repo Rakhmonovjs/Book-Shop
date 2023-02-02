@@ -1,7 +1,12 @@
 
 .hero_section {
     /* background-color: rgb(102, 102, 96); */
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(240, 240, 240);
+}
+.section_title{
+ /* background-color: yellow; */
+ padding: 12px;
+ margin: 12px;
 }
 
 .hero_content h2 {
@@ -12,7 +17,7 @@
 }
 
 .hero_content p {
-    color: var(--primary-color);
+    color: rgb(175, 180, 102);
     line-height: 28px;
 }
 
@@ -33,3 +38,16 @@
 .hero_content {
     padding-top: 45px;
 }
+.hero_img {
+    /* padding-top: 25px; */
+    /* height: 500px; */
+    /* width: 400px; */
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero_img{
+        height: 500px; 
+         width: 500px; 
+         padding-top: 50px;
+    }
+  }
