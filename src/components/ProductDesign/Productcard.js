@@ -1,5 +1,5 @@
 import React from 'react'
-import productImg from '../../assets/images/arm-chair-01.jpg'
+import productImg from '../../assets/images/trendbook1.jpg'
 import { motion } from 'framer-motion';
 import "./Productcard.css";
 import { Link } from "react-router-dom";

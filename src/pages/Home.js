@@ -21,7 +21,7 @@ const Home = () => {
         );
 
         const filterBestBook = products.filter(
-            (item) => item.category === "sofa"
+            (item) => item.category === "bestbook"
             );
 
         setTrendbook(filterTrendBook);
