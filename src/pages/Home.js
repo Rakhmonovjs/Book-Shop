@@ -16,6 +16,10 @@ const Home = () => {
     const year = new Date().getFullYear()
     const [trendbook, setTrendbook] = useState([]);
     const [bestbook, setBestbook] = useState([]);
+    const [mobilebook, setMobilebook] = useState([]);
+    const [distance, setDistance] = useState([])
+    const [popular, setPopular] = useState([]);
+    
 
     useEffect(() => {
         const filterTrendBook = products.filter(
@@ -26,8 +30,22 @@ const Home = () => {
             (item) => item.category === "bestbook"
             );
 
+        const filterMobileBook = products.filter(
+                (item) => item.category === "mobile"
+                );
+
+        const filterDistanceBook = products.filter(
+                    (item) => item.category === "wireless"
+                    );
+        const filterPopularBook = products.filter(
+             (item) => item.category === "watch"
+                        );
+                    
         setTrendbook(filterTrendBook);
         setBestbook(filterBestBook);
+        setMobilebook(filterMobileBook);
+        setDistance(filterDistanceBook);
+        setPopular(filterPopularBook);
     }, []);
 
     return (
@@ -92,6 +110,29 @@ const Home = () => {
                     <Col lg="6" md="6" className= "text-end">
                         <img src={counterImg} alt='' />
                     </Col>
+                </Row>
+            </Container>
+        </section>
+        <section className='mobile_book'>
+            <Container>
+                <Row>
+                    <Col lg='12' classname="text-center mb-5">
+                        <h2 className='section_title'>Mobile Book</h2>
+                    </Col>
+                    <Productlist data={mobilebook} />
+                    <Productlist data={distance}/>
+
+                </Row>
+            </Container>
+        </section>
+        <section className='popular_book'>
+            <Container>
+                <Row>
+                    <Col lg='12' classname="text-center mb-5">
+                        <h2 className='section_title'>Popular Book</h2>
+                    </Col>
+                    <Productlist data={popular} />
+                    
                 </Row>
             </Container>
         </section>
